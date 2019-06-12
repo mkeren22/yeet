@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Load in libraries here -->
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+</head>
+
+<body>
+
+<div id="root"> <!-- Vue can only access things contained within this div -->
+
+  <h1>Ya Yeet Ya!</h1>
+
+  <h2>Slide me!</h2>
+
+  <h3>The more you slide, the litter the yeet.</h3>
+
+  <!-- Some input sliders that are bound to data -->
+  <input type="range" min="1" max="100" step="1" v-model="data.x" ></input>
+
+  <!-- Access data in html with double curly braces {{ }} -->
+  <h3>The litness of the yeet is {{data.x}}.</h3>
+
+  <!-- Vue components for p5 sketches, also bound to data -->
+  <p5 src="./sketch1.js" :data="data"></p5>
+
+</div>
+
+<script src="vue-definitions.js"></script>
+
+</body>
+</html>
