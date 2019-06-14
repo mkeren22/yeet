@@ -17,7 +17,7 @@ function sketch(parent) { // we pass the sketch data from the parent
     p.draw = function() {
       p.background(255);
       p.mouseOverText();
-      p.textAlign(CENTER);
+      p.textAlign(p.CENTER);
       p.text(word, 200, 200);
     };
 
