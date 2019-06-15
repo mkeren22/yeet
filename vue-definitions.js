@@ -44,8 +44,8 @@ var app = new Vue({
 
   data: {
 
-    this data object stores variables that we want to share between components
-    this is not a good place to store data that doesn't need to be shared
+    // this data object stores variables that we want to share between components
+    // this is not a good place to store data that doesn't need to be shared
     data: {
       x: 10,
     }
